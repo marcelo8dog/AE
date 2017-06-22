@@ -6,7 +6,7 @@
       <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <style>
-        .parallax-container 
+        .parallax-container
         {
           height: 700px;
         }
@@ -34,8 +34,8 @@
           <!-- <div class="nav-wrapper blue"> -->
             <!-- <a href="#" class="brand-logo">Logo</a> -->
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li ><a style="position:relative; right:80px; font-size:30px;" href="sass.html">Acceso</a></li>
-              <li ><a style="position:relative; right:60px; font-size:30px;" href="sass.html">Acceso</a></li>
+              <li ><a style="position:relative; right:80px; font-size:30px;" href="sass.html">Inicio</a></li>
+              <li ><a style="position:relative; right:60px; font-size:30px;" href="#modal1">Acceso</a></li>
               <li class="offset-l4"><a style="position:relative; right:40px; font-size:30px;" href="badges.html">Components</a></li>
               <li><a style="position:relative; right:20px; font-size:30px;" href="collapsible.html">JavaScript</a></li>
             </ul>
@@ -44,6 +44,32 @@
         <div class="parallax"><img src="resources/images/8.jpg"></div>
         <h1>Todo bien</h1>
       </div>
+       <div id="modal1" class="modal">
+         <div class="modal-content">
+           <div class="row">
+             <h4>Iniciar Sesión</h4>
+              <form class="col s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">person</i>
+                    <input id="usuario" type="text" class="validate">
+                    <label for="icon_prefix">Usuario</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="contra" type="password" class="validate">
+                    <label for="icon_telephone">Contraseña</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+         </div>
+         <div class="modal-footer">
+           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ingresar</a>
+
+         </div>
+       </div>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script>
@@ -51,7 +77,12 @@
         {
           $('.parallax').parallax();
         });
+        $(document).ready(function(){
+          // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+          $('.modal').modal();
+        });
+
       </script>
-      
+
     </body>
   </html>
