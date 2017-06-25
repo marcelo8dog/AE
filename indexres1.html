@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <!DOCTYPE html>
   <html>
     <head>
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,50 +26,104 @@
                     font-size:80px;
 
         }
+        html, body, .block {
+           height: 100%;
+         }
+        .pin-top {
+          position: relative;
+        }
+
+        // Class for when element is below threshold
+        .pin-bottom {
+          position: relative;
+        }
+
+        // Class for when element is pinned
+        .pinned {
+          position: fixed !important;
+        }
       </style>
     </head>
     <body>
-      <div class="parallax-container">
-        <nav>
-          <!-- <div class="nav-wrapper blue"> -->
-            <!-- <a href="#" class="brand-logo">Logo</a> -->
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li ><a style="position:relative; right:80px; font-size:30px;" href="sass.html">Inicio</a></li>
-              <li ><a style="position:relative; right:60px; font-size:30px;" href="#modal1">Acceso</a></li>
-              <li class="offset-l4"><a style="position:relative; right:40px; font-size:30px;" href="badges.html">Components</a></li>
-              <li><a style="position:relative; right:20px; font-size:30px;" href="collapsible.html">JavaScript</a></li>
-            </ul>
-          <!-- </div> -->
-        </nav>
-        <div class="parallax"><img src="resources/images/8.jpg"></div>
-        <h1>Todo bien</h1>
-      </div>
-       <div id="modal1" class="modal">
-         <div class="modal-content">
-           <div class="row">
-             <h4>Iniciar Sesión</h4>
-              <form class="col s12">
-                <div class="row">
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">person</i>
-                    <input id="usuario" type="text" class="validate">
-                    <label for="icon_prefix">Usuario</label>
-                  </div>
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">vpn_key</i>
-                    <input id="contra" type="password" class="validate">
-                    <label for="icon_telephone">Contraseña</label>
-                  </div>
-                </div>
-              </form>
-            </div>
-         </div>
-         <div class="modal-footer">
-           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
-           <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ingresar</a>
+     <div id="blue" class="block">
+      <nav class="pushpin-demo-nav" data-target="blue">
+       <div class="nav-wrapper black">
+         <div class="container">
+           <a href="#" class="brand-logo">FIRST</a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li ><a style="position:relative; right:80px; font-size:30px;" href="sass.html">Inicio</a></li>
+             <li ><a style="position:relative; right:60px; font-size:30px;" href="#modal1">Acceso</a></li>
+             <li class="offset-l4"><a style="position:relative; right:40px; font-size:30px;" href="badges.html">Components</a></li>
+             <li><a style="position:relative; right:20px; font-size:30px;" href="collapsible.html">JavaScript</a></li>
+           </ul>
+                 <!-- <div class="nav-wrapper blue"> -->
+                   <!-- <a href="#" class="brand-logo">Logo</a> -->
 
+                 <!-- </div> -->
+               </nav>
+               <div><img style="width:100%; height:100%;" src="resources/images/8.jpg"></div>
+               <h2>Todo bien</h2>
+             </div>
+           </ul>
          </div>
        </div>
+     </nav>
+   </div>
+
+   <div id="red" class="block">
+     <nav class="pushpin-demo-nav" data-target="red">
+       <div class="nav-wrapper black">
+         <div class="container">
+           <a href="#" class="brand-logo">SECOND</a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a href="#!">Red Link 1</a></li>
+             <li><a href="#!">Red Link 2</a></li>
+             <li><a href="#!">Red Link 3</a></li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+   </div>
+   <div id="modal1" class="modal">
+     <div class="modal-content">
+       <div class="row">
+         <h4>Iniciar Sesión</h4>
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">person</i>
+                <input id="usuario" type="text" class="validate">
+                <label for="icon_prefix">Usuario</label>
+              </div>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">vpn_key</i>
+                <input id="contra" type="password" class="validate">
+                <label for="icon_telephone">Contraseña</label>
+              </div>
+            </div>
+          </form>
+        </div>
+     </div>
+     <div class="modal-footer">
+       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Ingresar</a>
+
+     </div>
+   </div>
+   <div id="green" class="block">
+     <nav class="pushpin-demo-nav" data-target="green">
+       <div class="nav-wrapper black">
+         <div class="container">
+           <a href="#" class="brand-logo">THIRD</a>
+           <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li><a href="#!">Green Link 1</a></li>
+             <li><a href="#!">Green Link 2</a></li>
+             <li><a href="#!">Green Link 3</a></li>
+           </ul>
+         </div>
+       </div>
+     </nav>
+   </div>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script>
@@ -82,6 +136,23 @@
           $('.modal').modal();
         });
 
+        $(document).ready(function(){
+         $('.target').pushpin({
+           top: 0,
+           bottom: 1000,
+           offset: 0
+         });
+       });
+
+        $('.pushpin-demo-nav').each(function() {
+          var $this = $(this);
+          var $target = $('#' + $(this).attr('data-target'));
+          $this.pushpin({
+            top: $target.offset().top,
+            bottom: $target.offset().top + $target.outerHeight() - $this.height()
+          });
+        });
+         $('.tabs-wrapper .row').pushpin('remove');
       </script>
 
     </body>
