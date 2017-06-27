@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+      .mdc-toolbar__row:first-child::after {
+        background-image: url("resources/images/4.jpg");
+        background-color: #00A61D #00C522;
+        background-size: cover;
+        background-position: center;
+      }
+      .demo-paragraph {
+        margin: 0px;
+        padding: 20px 20px;
+      }
+      @media (max-width: 599px) {
+        .demo-paragraph {
+          padding: 16px;
+        }
+      }
+      footer {
+        position: fixed;
+        bottom: 20px;
+        width: 100%;
+        text-align: center;
+        color: red;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      div section.opciones_izq span,div section.opciones_der span
+      {
+        position:relative;
+        font-size:200%;
+        height: 100%;
+      }
+      div section.opciones_izq span
+      {
+        left:3%;
+      }
+      div section.opciones_der
+      {
+        position: relative;
+        right:1%;
+        color:red;
+      }
+      a.opcion:link,a.opcion:visited
+      {
+        color:white;
+        text-decoration:none;
+        /*background-color:red;*/
+      }
+      .demo-content {
+      display: flex;
+      flex: 0 1 80px;
+      height: 100%;
+      box-sizing: border-box;
+      align-items: flex-start;
+
+    }
+    .mdc-list-group
+    {
+      background-color: red;
+      /*flex-flow: 3;*/
+    }
+    </style>
+  </head>
+  <body class="mdc-typography">
+<!-- Header de la página con el título del sistema inteligente y la imagen de ilustración -->
+    <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--fixed-lastrow-only mdc-toolbar--waterfall mdc-toolbar--flexible mdc-toolbar--flexible-default-behavior mdc-toolbar--flexible-space-maximized" style="transform: translateY(0px);">
+      <div  class="mdc-toolbar__row" style="height: 256px;">
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+          <span id="inicio" class="mdc-toolbar__title" style="font-size: 50%; padding: 2.5% 5%;">
+            Sistema Inteligente para la gestión de Eficiencia Energética en la Industria
+          </span>
+        </section>
+      </div>
+<!-- Colocación de los elementos del nav que redireccionan a distintas páginas -->
+      <div class="mdc-toolbar__row" >
+        <section class="mdc-toolbar__section mdc-toolbar__section--align-start opciones_izq" role="toolbar">
+                <span href="#inicio"><a href="#inicio" class="material-icons mdc-toolbar__icon">home</a>
+                  <a class="opcion" href="#inicio">Captura</a>
+                </span>
+                <span style="left:5%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">library_books</a>
+                  <a class="opcion" href="#noticias">Diagnóstico</a>
+                </span>
+                <span style="left:7%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">library_books</a>
+                  <a class="opcion" href="#noticias">Evaluación</a>
+                </span>
+                <span style="left:9%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">library_books</a>
+                  <a class="opcion" href="#noticias">Medidas</a>
+                </span>
+                <span style="left:11%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">library_books</a>
+                  <a class="opcion" href="#noticias">Monitoreo</a>
+                </span>
+                <span style="left:18%;color:red;" class="opciones_der" href="#modal1"><a style="color:red;"class="opcion" href="#modal1">Salir</a>
+                  <a href="#modal1" class="material-icons mdc-toolbar__icon" style="color:red;">vpn_key</a>
+                </span>
+        </section>
+      </div>
+    </header>
+<!-- Comienza todo lo que esta situado debajo del nav permanente -->
+    <div class="demo-content mdc-toolbar-fixed-adjust">
+      <nav class="mdc-permanent-drawer">
+        <div class="mdc-list-group">
+          <nav class="mdc-list">
+            <a class="mdc-list-item"  style="font-size:150%;color:white" >
+              <i  class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Empresa
+            </a>
+            <a class="mdc-list-item mdc-permanent-drawer--selected" style="font-size:150%;">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Equipos
+            </a>
+            <a class="mdc-list-item" style="font-size:150%;">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Facturación
+            </a>
+
+            <hr class="mdc-list-divider">
+
+            <a class="mdc-list-item" style="font-size:150%;">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Contacto
+            </a>
+          </nav>
+        </div>
+      </nav>
+<!-- Todo el contenido de la página -->
+      <main class="demo-main">
+        <div class="extra-content-wrapper" style="padding:0% 3%;">
+          <div id="extra-wide-content" class="mdc-elevation--z2" style="height: 100%; width: 100%;">
+          <h1 style="padding:2% 2%;font-size:380%;">
+            Captura de datos
+          </h1>
+          <p class="demo-paragraph" style="padding:0% 2%;">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+          </p>
+          <p class="demo-paragraph">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+          </p>
+          <p class="demo-paragraph" id="noticias">
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
+          </p>
+          <!-- &nbsp; -->
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <span>Flexible Expansion Ratio: <span id="ratio">1.00</span></span>
+    </footer>
+<!-- Termino de la página -->
+    <!-- Comienzan los scripts -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script type="text/javascript">
+    mdc.ripple.MDCRipple.attachTo(document.querySelector('.opcion'));
+      (function()
+      {
+        var pollId = 0;
+        pollId = setInterval(function()
+        {
+          var pos = getComputedStyle(document.querySelector('.mdc-toolbar')).position;
+          if (pos === 'fixed' || pos === 'relative')
+          {
+            init();
+            clearInterval(pollId);
+          }
+        }, 250);
+        function init()
+        {
+          var ratioSpan = document.querySelector("#ratio");
+          var toolbarEl = document.querySelector('.mdc-toolbar')
+          var toolbar = mdc.toolbar.MDCToolbar.attachTo(toolbarEl);
+          toolbar.listen('MDCToolbar:change', function(evt)
+          {
+            var flexibleExpansionRatio = evt.detail.flexibleExpansionRatio;
+            ratioSpan.innerHTML = flexibleExpansionRatio.toFixed(2);
+          });
+          toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
+        }
+      })();
+      var extraWide = document.querySelector('#extra-wide-content');
+      extraWide.style.display = 'none';
+        extraWide.style.display = extraWide.style.display ? '' : 'none';
+      var extraTall = document.querySelector('#extra-tall-content');
+      extraTall.style.display = 'none';
+      document.querySelector('#toggle-tall').addEventListener('click', function() {
+        extraTall.style.display = extraTall.style.display ? '' : 'none';
+      });
+    </script>
+  </body>
+</html>
