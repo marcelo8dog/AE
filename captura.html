@@ -32,17 +32,19 @@
       }
       div section.opciones_izq span,div section.opciones_der span
       {
-        position:relative; 
+        position:relative;
         font-size:200%;
         height: 100%;
       }
       div section.opciones_izq span
       {
-        left:10%; 
+        left:3%;
       }
-      div section.opciones_der span
+      div section.opciones_der
       {
-        right:10%;
+        position: relative;
+        right:1%;
+        color:red;
       }
       a.opcion:link,a.opcion:visited
       {
@@ -66,60 +68,70 @@
     </style>
   </head>
   <body class="mdc-typography">
+<!-- Header de la página con el título del sistema inteligente y la imagen de ilustración -->
     <header class="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--fixed-lastrow-only mdc-toolbar--waterfall mdc-toolbar--flexible mdc-toolbar--flexible-default-behavior mdc-toolbar--flexible-space-maximized" style="transform: translateY(0px);">
       <div  class="mdc-toolbar__row" style="height: 256px;">
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <span id="inicio" class="mdc-toolbar__title" style="font-size: 50%; padding: 2.5% 5%;">Sistema Inteligente para la gestión de Eficiencia Energética en la Industria</span>
+          <span id="inicio" class="mdc-toolbar__title" style="font-size: 50%; padding: 2.5% 5%;">
+            Sistema Inteligente para la gestión de Eficiencia Energética en la Industria
+          </span>
         </section>
       </div>
+<!-- Colocación de los elementos del nav que redireccionan a distintas páginas -->
       <div class="mdc-toolbar__row" >
         <section class="mdc-toolbar__section mdc-toolbar__section--align-start opciones_izq" role="toolbar">
-                <span href="#inicio"><a href="#inicio" class="material-icons mdc-toolbar__icon">home</a><a class="opcion" href="#inicio">Empresa</a></span>
-              <span style="left:20%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">library_books</a><a class="opcion" href="#noticias">Equipos</a></span>
-        </section>
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-end opciones_der" role="toolbar">
-              <span href="#modal1"><a class="opcion" href="#modal1">Salir</a><a href="#modal1" class="material-icons mdc-toolbar__icon">vpn_key</a></span>
+                <span href="#inicio"><a href="#inicio" class="material-icons mdc-toolbar__icon">home</a>
+                  <a class="opcion" href="#inicio">Captura</a>
+                </span>
+                <span style="left:5%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">library_books</a>
+                  <a class="opcion" href="#noticias">Diagnóstico</a>
+                </span>
+                <span style="left:7%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">library_books</a>
+                  <a class="opcion" href="#noticias">Evaluación</a>
+                </span>
+                <span style="left:9%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">library_books</a>
+                  <a class="opcion" href="#noticias">Medidas</a>
+                </span>
+                <span style="left:11%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">library_books</a>
+                  <a class="opcion" href="#noticias">Monitoreo</a>
+                </span>
+                <span style="left:18%;color:red;" class="opciones_der" href="#modal1"><a style="color:red;"class="opcion" href="#modal1">Salir</a>
+                  <a href="#modal1" class="material-icons mdc-toolbar__icon" style="color:red;">vpn_key</a>
+                </span>
         </section>
       </div>
     </header>
+<!-- Comienza todo lo que esta situado debajo del nav permanente -->
     <div class="demo-content mdc-toolbar-fixed-adjust">
       <nav class="mdc-permanent-drawer">
         <div class="mdc-list-group">
           <nav class="mdc-list">
-            <a class="mdc-list-item mdc-permanent-drawer--selected" href="https://material-components-web.appspot.com/drawer/permanent-drawer-below-toolbar.html#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Inbox
+            <a class="mdc-list-item"  style="font-size:150%;color:white" >
+              <i  class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Empresa
             </a>
-            <a class="mdc-list-item" href="https://material-components-web.appspot.com/drawer/permanent-drawer-below-toolbar.html#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Star
+            <a class="mdc-list-item mdc-permanent-drawer--selected" style="font-size:150%;">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Equipos
             </a>
-            <a class="mdc-list-item" href="https://material-components-web.appspot.com/drawer/permanent-drawer-below-toolbar.html#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Sent Mail
+            <a class="mdc-list-item" style="font-size:150%;">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Facturación
             </a>
-            <a class="mdc-list-item" href="https://material-components-web.appspot.com/drawer/permanent-drawer-below-toolbar.html#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Drafts
-            </a>
-          </nav>
 
-          <hr class="mdc-list-divider">
+            <hr class="mdc-list-divider">
 
-          <nav class="mdc-list">
-            <a class="mdc-list-item" href="https://material-components-web.appspot.com/drawer/permanent-drawer-below-toolbar.html#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">email</i>All Mail
-            </a>
-            <a class="mdc-list-item" href="https://material-components-web.appspot.com/drawer/permanent-drawer-below-toolbar.html#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">delete</i>Trash
-            </a>
-            <a class="mdc-list-item" href="https://material-components-web.appspot.com/drawer/permanent-drawer-below-toolbar.html#">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">report</i>Spam
+            <a class="mdc-list-item" style="font-size:150%;">
+              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Contacto
             </a>
           </nav>
         </div>
       </nav>
+<!-- Todo el contenido de la página -->
       <main class="demo-main">
-        <div class="extra-content-wrapper">
-          <!-- <button id="toggle-wide">Toggle extra-wide content</button> -->
-          <div id="extra-wide-content" class="mdc-elevation--z2" style="display: none; height: 100%; width: 100%;">
-          <p class="demo-paragraph" style="padding:2% 2%;">
+        <div class="extra-content-wrapper" style="padding:0% 3%;">
+          <div id="extra-wide-content" class="mdc-elevation--z2" style="height: 100%; width: 100%;">
+          <h1 style="padding:2% 2%;font-size:380%;">
+            Captura de datos
+          </h1>
+          <p class="demo-paragraph" style="padding:0% 2%;">
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
           </p>
           <p class="demo-paragraph">
@@ -146,27 +158,29 @@
     <footer>
       <span>Flexible Expansion Ratio: <span id="ratio">1.00</span></span>
     </footer>
-<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<!-- Termino de la página -->
+    <!-- Comienzan los scripts -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script type="text/javascript">
     mdc.ripple.MDCRipple.attachTo(document.querySelector('.opcion'));
-      (function() 
+      (function()
       {
         var pollId = 0;
-        pollId = setInterval(function() 
+        pollId = setInterval(function()
         {
           var pos = getComputedStyle(document.querySelector('.mdc-toolbar')).position;
-          if (pos === 'fixed' || pos === 'relative') 
+          if (pos === 'fixed' || pos === 'relative')
           {
             init();
             clearInterval(pollId);
           }
         }, 250);
-        function init() 
+        function init()
         {
           var ratioSpan = document.querySelector("#ratio");
           var toolbarEl = document.querySelector('.mdc-toolbar')
           var toolbar = mdc.toolbar.MDCToolbar.attachTo(toolbarEl);
-          toolbar.listen('MDCToolbar:change', function(evt) 
+          toolbar.listen('MDCToolbar:change', function(evt)
           {
             var flexibleExpansionRatio = evt.detail.flexibleExpansionRatio;
             ratioSpan.innerHTML = flexibleExpansionRatio.toFixed(2);
