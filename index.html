@@ -121,6 +121,7 @@
     </header>
     <main>
       <div class="mdc-toolbar-fixed-adjust">
+    <!-- dialog -->
         <div class="demo-body">
          <aside id="mdc-dialog-default" class="mdc-dialog" role="alertdialog" aria-hidden="true" aria-labelledby="mdc-dialog-default-label" aria-describedby="mdc-dialog-default-description">
      	    <div class="mdc-dialog__surface">
@@ -153,7 +154,7 @@
      	    <div class="mdc-dialog__backdrop"></div>
        	</aside>
       </div>
-
+<!-- fin del dialog -->
 
 
         <p class="demo-paragraph">
@@ -217,27 +218,27 @@
         }
       })();
     </script>
-
-
+          <!-- dialog -->
     <script src="./mdc/material-components-web.js.descarga" charset="utf-8"></script>
     <script>
       (function() {
         var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-default'));
         dialog.listen('MDCDialog:accept', function() {
-          var usu=2;
-          var con=3;
+          var usu=$('#usuario').val();
+          var con=$('#contra').val();
            $.ajax(
              {
                url:'programs/inicio.php',
                type:'POST',
                data:
                {
-               usuario:usu,
-               contra:con,
+                 usuario:usu,
+                 contra:con,
                },
                success:function(dato)
                {
-               console.log('hola');
+                console.log(dato);
+                console.log('hola');
                }
              });
           });
