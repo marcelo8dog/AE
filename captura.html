@@ -7,7 +7,9 @@
      <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
-      .mdc-toolbar__row:first-child::after {
+
+      .mdc-toolbar__row:first-child::after 
+      {
         background-image: url("resources/images/4.jpg");
         background-color: #00A61D #00C522;
         background-size: cover;
@@ -60,11 +62,11 @@
       align-items: flex-start;
 
     }
-    .mdc-list-group
+    /*.mdc-list-group
     {
       background-color: red;
-      /*flex-flow: 3;*/
-    }
+      flex-flow: 3;
+    }*/
     h1 a.material-icons
     {
       /*position:relative;
@@ -72,6 +74,35 @@
       color:black;
       font-size:120%;
     }
+    body
+      {
+        --mdc-theme-primary : #0077bc;
+        --mdc-theme-accent : #50c119;
+        --mdc-theme-background : #87f553;
+      }
+      main > div
+      {
+        --mdc-theme-background : #58a5ef; 
+      }
+      h1
+      {
+        --mdc-theme-accent : #ffffff;
+      }
+      div.demo-content > nav
+      {
+        --mdc-theme-primary : #41A915;
+        --mdc-theme-accent : #004c8b;
+      }
+      nav.mdc-list a, nav.mdc-list a i
+      {
+        color:white;
+      }
+      div.mdc-card
+      {
+        
+        --mdc-theme-primary :#41A915;
+        --mdc-theme-accent : #0077bc;
+      }
     </style>
   </head>
   <body class="mdc-typography">
@@ -110,23 +141,23 @@
     </header>
 <!-- Comienza todo lo que esta situado debajo del nav permanente -->
     <div class="demo-content mdc-toolbar-fixed-adjust">
-      <nav class="mdc-permanent-drawer">
+      <nav class="mdc-permanent-drawer mdc-theme--accent-bg mdc-elevation--z10">
         <div class="mdc-list-group">
-          <nav class="mdc-list">
+          <nav class="mdc-list mdc-theme--text-primary-on-primary">
             <a class="mdc-list-item mdc-permanent-drawer--selected"  style="font-size:150%;" >
-              <i  class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Empresa
+              <i  class="material-icons mdc-list-item__start-detail mdc-theme--text-primary-on-primary" aria-hidden="true">inbox</i>Empresa
             </a>
             <a class="mdc-list-item " style="font-size:150%;">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Equipos
+              <i class="material-icons mdc-list-item__start-detail mdc-theme--text-primary-on-primary" aria-hidden="true">star</i>Equipos
             </a>
             <a class="mdc-list-item" style="font-size:150%;">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Facturación
+              <i class="material-icons mdc-list-item__start-detail mdc-theme--text-primary-on-primary" aria-hidden="true">send</i>Facturación
             </a>
 
             <hr class="mdc-list-divider">
 
             <a class="mdc-list-item" style="font-size:150%;">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Contacto
+              <i class="material-icons mdc-list-item__start-detail mdc-theme--text-primary-on-primary" aria-hidden="true">drafts</i>Contacto
             </a>
           </nav>
         </div>
@@ -134,11 +165,29 @@
 <!-- Todo el contenido de la página -->
       <main class="demo-main">
         <div class="extra-content-wrapper" style="padding:0% 3%;">
-          <div id="extra-wide-content" class="mdc-elevation--z2" style="height: 100%; width: 100%;">
-          <h1 style="padding:2% 2%;font-size:380%;">
-          <a class="material-icons mdc-toolbar__icon">subtitles</a>
+          <div id="extra-wide-content" class="mdc-elevation--z10 mdc-theme--background" style="height: 100%; width: 100%;">
+          <h1 class="mdc-theme--accent" style="padding:2% 2%;font-size:380%;">
+            <a class="material-icons mdc-toolbar__icon mdc-theme--accent">subtitles</a>
             Captura de datos
           </h1>
+          <div style="padding:2% 2%;" class="">
+          <div class="mdc-card mdc-theme--primary-bg mdc-elevation--z23">
+  <section class="mdc-card__primary ">
+    <h1 class="mdc-card__title mdc-card__title--large mdc-theme--text-primary-on-primary">Title goes here</h1>
+    <h2 class="mdc-card__subtitle mdc-theme--text-primary-on-primary">Subtitle here</h2>
+  </section>
+  <section class="mdc-card__supporting-text mdc-theme--text-primary-on-primary">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </section>
+  <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action mdc-theme--text-primary-on-primary">Action 1</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action mdc-theme--text-primary-on-primary">Action 2</button>
+  </section>
+</div>
+</div>
           <p class="demo-paragraph" style="padding:0% 2%;">
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
           </p>
