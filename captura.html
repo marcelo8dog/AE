@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/titulo.css">
     <link rel="stylesheet" href="styles/menus.css">
+    <link rel="stylesheet" href="styles/texto.css">
   </head>
   <body class="mdc-typography">
 <!-- Header de la página con el título del sistema inteligente y la imagen de ilustración -->
@@ -88,34 +89,153 @@
         y2="70"/>
     </svg> -->
 
-    <!-- <h2 class="mdc-card__subtitle mdc-theme--text-primary-on-primary">Subtitle here</h2> -->
+     <h2 class="form_subtitulo mdc-card__subtitle mdc-theme--text-primary-on-primary">Es necesario llenar los siguientes datos para proseguir*</h2> 
     <section class="datos_empresa_form_container">
       <section class="mdc-layout-grid__inner hero">
-        <div class="mdc-layout-grid__cell mdc-textfield mdc-textfield--box">
-          <input type="text" id="my-textfield" class="mdc-textfield__input">
-          <label class="mdc-textfield__label" for="my-textfield">Nombre de la empresa</label>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">Nombre de la empresa</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
         </div>
-        <div class="mdc-layout-grid__cell mdc-textfield mdc-textfield--box">
-          <input type="text" id="my-textfield" class="mdc-textfield__input">
-          <label class="mdc-textfield__label" for="my-textfield">RFC</label>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">RFC</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
         </div>
-        <div class="mdc-layout-grid__cell mdc-textfield mdc-textfield--box">
-          <input type="text" id="my-textfield" class="mdc-textfield__input">
-          <label class="mdc-textfield__label" for="my-textfield">Calle</label>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">Calle</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
         </div>
       </section>
-    </section>
-    <section class="hero">
-      <div class="mdc-textfield mdc-textfield--box">
-        <input type="text" id="my-textfield" class="mdc-textfield__input">
-        <label class="mdc-textfield__label" for="my-textfield">Hint text</label>
-      </div>
-    </section>
-    <section class="hero">
-      <div class="mdc-textfield mdc-textfield--upgraded">
-        <input type="text" class="mdc-textfield__input" id="my-textfield" name="email" aria-controls="my-textfield-helptext" data-demo-no-auto-js="" autocomplete="email">
-        <label for="my-textfield" class="mdc-textfield__label">Text Field</label>
-      </div>
+      <section class="mdc-layout-grid__inner hero">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">Colonia</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">Delegación</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">Código Postal</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="mdc-layout-grid__inner hero">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">Teléfono</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">Página Web</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="mdc-layout-grid__inner hero">
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">Área del Terreno</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div class="mdc-layout-grid__inner">
+            <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop mdc-textfield mdc-textfield--box">
+              <input required pattern=".{1,}" type="text" class="mdc-textfield__input" id="pw" aria-controls="pw-validation-msg">
+              <label for="pw" class="mdc-textfield__label">Área Construida</label>
+            </div>
+            <p class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12-desktop alerta_validacion mdc-textfield-helptext mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
+              Debe llenar este campo
+            </p>
+          </div>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-4 sin_gutter">
+          <div id="hero-js-select" class="seleccionador mdc-select" role="listbox" tabindex="0" style="width: 352px;">
+          <span class="mdc-select__selected-text item_seleccionado">Ramo Industrial*</span>
+          <div class="mdc-simple-menu mdc-select__menu" style="left: 523.5px; top: 219.5px; transform-origin: center 8px 0px; transform: scale(0, 0);">
+            <ul class="mdc-list mdc-simple-menu__items" style="transform: scale(0, 0);">
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Bread, Cereal, Rice, and Pasta
+              </li>
+              <li class="mdc-list-item" role="option" aria-disabled="true" tabindex="0">
+                Vegetables
+              </li>
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Fruit
+              </li>
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Milk, Yogurt, and Cheese
+              </li>
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+              </li>
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Fats, Oils, and Sweets
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
+      </section>
     </section>
   </section>
   <section class="mdc-card__supporting-text mdc-theme--text-primary-on-primary">
@@ -161,7 +281,36 @@
           <p class="demo-paragraph">
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
           </p>
-          <p class="demo-paragraph" id="noticias">
+          
+        <div id="hero-js-select" class="mdc-select" role="listbox" tabindex="0" style="width: 352px;">
+          <span class="mdc-select__selected-text">Pick a food group</span>
+          <div class="mdc-simple-menu mdc-select__menu" style="left: 523.5px; top: 219.5px; transform-origin: center 8px 0px; transform: scale(0, 0);">
+            <ul class="mdc-list mdc-simple-menu__items" style="transform: scale(1, 1);">
+              <li class="mdc-list-item" role="option" aria-disabled="true">
+                Pick a food group
+              </li>
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Bread, Cereal, Rice, and Pasta
+              </li>
+              <li class="mdc-list-item" role="option" aria-disabled="true" tabindex="0">
+                Vegetables
+              </li>
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Fruit
+              </li>
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Milk, Yogurt, and Cheese
+              </li>
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+              </li>
+              <li class="mdc-list-item" role="option" tabindex="0">
+                Fats, Oils, and Sweets
+              </li>
+            </ul>
+          </div>
+        </div>
+            <p class="demo-paragraph" id="noticias">
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
 
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
@@ -228,6 +377,8 @@
 //      document.querySelector('#toggle-tall').addEventListener('click', function() {
 //        extraTall.style.display = extraTall.style.display ? '' : 'none';
 //      });
+      var heroSelect = document.getElementById('hero-js-select');
+        mdc.select.MDCSelect.attachTo(heroSelect);
     </script>
   </body>
 </html>

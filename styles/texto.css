@@ -1,3 +1,37 @@
+.datos_empresa_form_container
+{
+  
+}
+.form_subtitulo
+{
+  margin: 2vw;
+}
+.sin_gutter
+{
+  --mdc-layout-grid-margin-desktop: 0px;
+  --mdc-layout-grid-gutter-desktop: 0px;
+  --mdc-layout-grid-gutter-phone: 0px;
+}
+
+.alerta_validacion
+{
+  text-align: center;
+  line-height: .01vh;
+}
+
+.seleccionador
+{
+  height: 75%;
+  background-color: rgba(20,20,20,0.06);
+}
+
+.item_seleccionado
+{
+  position: relative;
+  left: 1.5vw;
+  font-size: 1.4vw;
+  color: rgba(0,0,0,0.5);
+}
 .demo-paragraph {
   margin: 0px;
   padding: 20px 20px;
