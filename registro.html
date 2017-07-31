@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AE</title>
+  </head>
+  <body>
+    <input type="text" value="cuenta" id="nusuario"/>
+    <input type="password" value="contraseña" id="ncontra"/>
+    <input type="submit" id="submit"/>
+  <script>
+  $('#submit').click(function()
+  {
+      console.log("hk");
+    var usu=$('#nusuario').val();
+    var con=$('#ncontra').val();
+     $.ajax(
+       {
+         url:'programs/inicio.php',
+         type:'POST',
+         data:
+         {
+           nusuario:usu,
+           ncontra:con,
+         },
+         success:function(dato)
+         {
+          console.log(dato);
+            // window.location.href="http://localhost/AE/acceso.html";
+         }
+       });
+    });
+  </script>
+  </body>
+</html>
