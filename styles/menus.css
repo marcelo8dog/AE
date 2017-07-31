@@ -1,0 +1,25 @@
+a.opcion:link,a.opcion:visited
+{
+  color:white;
+  text-decoration:none;
+  /*background-color:red;*/
+}
+
+div section.opciones_izq span,div section.opciones_der span
+{
+  position:relative;
+  font-size:200%;
+  height: 100%;
+}
+
+div section.opciones_izq span
+{
+  left:3%;
+}
+
+div section.opciones_der
+{
+  position: relative;
+  right:1%;
+  color:red;
+}

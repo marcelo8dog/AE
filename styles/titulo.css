@@ -1,0 +1,16 @@
+.mdc-toolbar__row:first-child::after
+{
+  background-image: url("../resources/images/4.jpg");
+  background-color: #00A61D #00C522;
+  background-size: cover;
+  background-position: center;
+}
+
+.demo-content 
+{
+  display: flex;
+  flex: 0 1 80px;
+  height: 100%;
+  box-sizing: border-box;
+  align-items: flex-start;
+}

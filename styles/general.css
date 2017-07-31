@@ -1,0 +1,58 @@
+footer 
+{
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: red;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+h1 a.material-icons
+{
+  /*position:relative;
+  top:120%;*/
+  color:black;
+  font-size:120%;
+}
+body
+{
+  --mdc-theme-primary : #0077bc;
+  --mdc-theme-accent : #50c119;
+  --mdc-theme-background : #87f553;
+}
+main > div
+{
+  --mdc-theme-background : #58a5ef;
+}
+h1
+{
+  --mdc-theme-accent : #ffffff;
+}
+div.demo-content > nav
+{
+  --mdc-theme-primary : #41A915;
+  --mdc-theme-accent : #004c8b;
+}
+nav.mdc-list a, nav.mdc-list a i
+{
+  color:white;
+}
+div.mdc-card
+{
+
+  --mdc-theme-primary :#41A915;
+  --mdc-theme-accent : #0077bc;
+}
+section.mdc-card__primary h1
+{
+  font-size:250%;
+  padding:0% 0%;
+}
+main section.hero
+{
+  --mdc-theme-primary : #0077bc;
+  --mdc-theme-accent : #58a5ef;
+  padding:0% 2%;
+  color:white;
+}

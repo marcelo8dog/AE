@@ -1,0 +1,9 @@
+.demo-paragraph {
+  margin: 0px;
+  padding: 20px 20px;
+}
+@media (max-width: 599px) {
+  .demo-paragraph {
+    padding: 16px;
+  }
+}

@@ -6,73 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-      .mdc-toolbar__row:first-child::after {
-        background-image: url("resources/images/4.jpg");
-        background-color: #00A61D #00C522;
-        background-size: cover;
-        background-position: center;
-      }
-      .demo-paragraph {
-        margin: 0px;
-        padding: 20px 20px;
-      }
-      @media (max-width: 599px) {
-        .demo-paragraph {
-          padding: 16px;
-        }
-      }
-      footer {
-        position: fixed;
-        bottom: 20px;
-        width: 100%;
-        text-align: center;
-        color: red;
-        background-color: rgba(0, 0, 0, 0.8);
-      }
-      div section.opciones_izq span,div section.opciones_der span
-      {
-        position:relative;
-        font-size:200%;
-        height: 100%;
-      }
-      div section.opciones_izq span
-      {
-        left:3%;
-      }
-      div section.opciones_der
-      {
-        position: relative;
-        right:1%;
-        color:red;
-      }
-      a.opcion:link,a.opcion:visited
-      {
-        color:white;
-        text-decoration:none;
-        /*background-color:red;*/
-      }
-      .demo-content {
-      display: flex;
-      flex: 0 1 80px;
-      height: 100%;
-      box-sizing: border-box;
-      align-items: flex-start;
-
-    }
-    .mdc-list-group
-    {
-      background-color: red;
-      /*flex-flow: 3;*/
-    }
-    h1 a.material-icons
-    {
-      /*position:relative;
-      top:120%;*/
-      color:black;
-      font-size:120%;
-    }
-    </style>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/titulo.css">
+    <link rel="stylesheet" href="styles/menus.css">
   </head>
   <body class="mdc-typography">
 <!-- Header de la página con el título del sistema inteligente y la imagen de ilustración -->
@@ -110,23 +46,23 @@
     </header>
 <!-- Comienza todo lo que esta situado debajo del nav permanente -->
     <div class="demo-content mdc-toolbar-fixed-adjust">
-      <nav class="mdc-permanent-drawer">
+      <nav class="mdc-permanent-drawer mdc-theme--accent-bg mdc-elevation--z10">
         <div class="mdc-list-group">
-          <nav class="mdc-list">
+          <nav class="mdc-list mdc-theme--text-primary-on-primary">
             <a class="mdc-list-item mdc-permanent-drawer--selected"  style="font-size:150%;" >
-              <i  class="material-icons mdc-list-item__start-detail" aria-hidden="true">inbox</i>Empresa
+              <i  class="material-icons mdc-list-item__start-detail mdc-theme--text-primary-on-primary" aria-hidden="true">inbox</i>Empresa
             </a>
             <a class="mdc-list-item " style="font-size:150%;">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">star</i>Equipos
+              <i class="material-icons mdc-list-item__start-detail mdc-theme--text-primary-on-primary" aria-hidden="true">star</i>Equipos
             </a>
             <a class="mdc-list-item" style="font-size:150%;">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">send</i>Facturación
+              <i class="material-icons mdc-list-item__start-detail mdc-theme--text-primary-on-primary" aria-hidden="true">send</i>Facturación
             </a>
 
             <hr class="mdc-list-divider">
 
             <a class="mdc-list-item" style="font-size:150%;">
-              <i class="material-icons mdc-list-item__start-detail" aria-hidden="true">drafts</i>Contacto
+              <i class="material-icons mdc-list-item__start-detail mdc-theme--text-primary-on-primary" aria-hidden="true">drafts</i>Contacto
             </a>
           </nav>
         </div>
@@ -134,12 +70,92 @@
 <!-- Todo el contenido de la página -->
       <main class="demo-main">
         <div class="extra-content-wrapper" style="padding:0% 3%;">
-          <div id="extra-wide-content" class="mdc-elevation--z2" style="height: 100%; width: 100%;">
-          <h1 style="padding:2% 2%;font-size:380%;">
-          <a class="material-icons mdc-toolbar__icon">subtitles</a>
+          <div id="extra-wide-content" class="mdc-elevation--z10 mdc-theme--background" style="height: 100%; width: 100%;">
+          <h1 class="mdc-theme--accent" style="padding:2% 2%;font-size:380%;">
+            <a class="material-icons mdc-toolbar__icon mdc-theme--accent">subtitles</a>
             Captura de datos
           </h1>
-          <p class="demo-paragraph" style="padding:0% 2%;">
+          <div style="padding:2% 2%;" class="">
+          <div class="mdc-card mdc-theme--primary-bg mdc-elevation--z23">
+
+  <section class="mdc-card__primary ">
+    <h1 class="mdc-card__title mdc-card__title--large mdc-theme--text-primary-on-primary">Datos de la empresa</h1>
+    <!-- <svg width="80" heigth="30">
+      <line
+        x1="0"
+        y1="70"
+        x2="100"
+        y2="70"/>
+    </svg> -->
+
+    <!-- <h2 class="mdc-card__subtitle mdc-theme--text-primary-on-primary">Subtitle here</h2> -->
+    <section class="datos_empresa_form_container">
+      <section class="mdc-layout-grid__inner hero">
+        <div class="mdc-layout-grid__cell mdc-textfield mdc-textfield--box">
+          <input type="text" id="my-textfield" class="mdc-textfield__input">
+          <label class="mdc-textfield__label" for="my-textfield">Nombre de la empresa</label>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-textfield mdc-textfield--box">
+          <input type="text" id="my-textfield" class="mdc-textfield__input">
+          <label class="mdc-textfield__label" for="my-textfield">RFC</label>
+        </div>
+        <div class="mdc-layout-grid__cell mdc-textfield mdc-textfield--box">
+          <input type="text" id="my-textfield" class="mdc-textfield__input">
+          <label class="mdc-textfield__label" for="my-textfield">Calle</label>
+        </div>
+      </section>
+    </section>
+    <section class="hero">
+      <div class="mdc-textfield mdc-textfield--box">
+        <input type="text" id="my-textfield" class="mdc-textfield__input">
+        <label class="mdc-textfield__label" for="my-textfield">Hint text</label>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="mdc-textfield mdc-textfield--upgraded">
+        <input type="text" class="mdc-textfield__input" id="my-textfield" name="email" aria-controls="my-textfield-helptext" data-demo-no-auto-js="" autocomplete="email">
+        <label for="my-textfield" class="mdc-textfield__label">Text Field</label>
+      </div>
+    </section>
+  </section>
+  <section class="mdc-card__supporting-text mdc-theme--text-primary-on-primary">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat.
+  </section>
+  <section class="mdc-card__actions">
+    <button class="mdc-button mdc-button--compact mdc-card__action mdc-theme--text-primary-on-primary">Action 1</button>
+    <button class="mdc-button mdc-button--compact mdc-card__action mdc-theme--text-primary-on-primary">Action 2</button>
+  </section>
+</div>
+</div>
+
+
+<!-- </section>
+<section class="hero">
+  <div class="mdc-textfield">
+    <input type="text" id="my-textfield" class="mdc-textfield__input">
+    <label class="mdc-textfield__label" for="my-textfield">Hint text</label>
+  </div>
+  <div class="mdc-textfield mdc-textfield--upgraded">
+    <input type="text" class="mdc-textfield__input" id="my-textfield" name="email" aria-controls="my-textfield-helptext" data-demo-no-auto-js="" autocomplete="email">
+    <label for="my-textfield" class="mdc-textfield__label">Text Field</label>
+  </div>
+</section>
+<section class="hero">
+  <div class="mdc-textfield">
+    <input type="text" id="my-textfield" class="mdc-textfield__input">
+    <label class="mdc-textfield__label" for="my-textfield">Hint text</label>
+  </div>
+</section>
+<section class="hero">
+  <div class="mdc-textfield mdc-textfield--upgraded">
+    <input type="text" class="mdc-textfield__input" id="my-textfield" name="email" aria-controls="my-textfield-helptext" data-demo-no-auto-js="" autocomplete="email">
+    <label for="my-textfield" class="mdc-textfield__label">Text Field</label>
+  </div>
+</section> -->
+<p class="demo-paragraph" style="padding:0% 2%;">
             Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
           </p>
           <p class="demo-paragraph">
@@ -170,6 +186,14 @@
     <!-- Comienzan los scripts -->
     <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
     <script type="text/javascript">
+    (function() {
+      var tfs = document.querySelectorAll(
+        '.mdc-textfield:not([data-demo-no-auto-js])'
+      );
+      for (var i = 0, tf; tf = tfs[i]; i++) {
+        mdc.textfield.MDCTextfield.attachTo(tf);
+      }
+    })();
     mdc.ripple.MDCRipple.attachTo(document.querySelector('.opcion'));
       (function()
       {
@@ -199,11 +223,11 @@
       var extraWide = document.querySelector('#extra-wide-content');
       extraWide.style.display = 'none';
         extraWide.style.display = extraWide.style.display ? '' : 'none';
-      var extraTall = document.querySelector('#extra-tall-content');
-      extraTall.style.display = 'none';
-      document.querySelector('#toggle-tall').addEventListener('click', function() {
-        extraTall.style.display = extraTall.style.display ? '' : 'none';
-      });
+//      var extraTall = document.querySelector('#extra-tall-content');
+//      extraTall.style.display = 'none';
+//      document.querySelector('#toggle-tall').addEventListener('click', function() {
+//        extraTall.style.display = extraTall.style.display ? '' : 'none';
+//      });
     </script>
   </body>
 </html>
