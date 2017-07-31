@@ -4,47 +4,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>AE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <script src="./mdc/demo-styles.css.js.descarga" charset="utf-8"></script>
-    <style type="text/css">@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css);</style>
-
-
      <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <script src="./mdc/material-components-web.css.js.descarga" charset="utf-8"></script>
-
-    <script src="./mdc/demo-styles.css.js.descarga" charset="utf-8"></script>
-    <style type="text/css">@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css);</style>
-
-    <link href="./mdc/css" rel="stylesheet">
-    <link href="./mdc/icon" rel="stylesheet">
-    <link rel="stylesheet" href="./mdc/css(1)">
     <style>
-      .demo-body {
-        padding: 24px;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      .demo-content > button {
-        margin-bottom: 6px;
-      }
-      .mdc-theme--dark {
-        background-color: #303030;
-      }
-
-      section.demo-content {
-        padding: 24px;
-      }
-
-      .catalog-dialog-demo {
-        position: relative;
-        width: 320px;
+      body
+      {
+        --mdc-theme-primary : #0077bc;
+        --mdc-theme-accent : #568234;
+        --mdc-theme-background : ;
       }
       .mdc-toolbar__row:first-child::after {
         background-image: url("resources/images/4.jpg");
-        background-color: #00A61D #00C522;
+        /*background-color: #00A61D #00C522;*/
         background-size: cover;
         background-position: center;
       }
@@ -57,7 +28,7 @@
           padding: 16px;
         }
       }
-      footer span{
+      footer {
         position: fixed;
         bottom: 20px;
         width: 100%;
@@ -85,19 +56,6 @@
         text-decoration:none;
         /*background-color:red;*/
       }
-      .vali {
-        margin: 24px;
-        padding: 24px;
-        min-width: 240px;
-      }
-      .vali .mdc-textfield {
-        min-width: 240px;
-
-      }
-      .heroo .mdc-textfield {
-        min-width: 240px;
-
-      }
     </style>
   </head>
   <body class="mdc-typography">
@@ -114,49 +72,12 @@
               <span style="left:40%;" href="#noticias"><a href="#noticias" class="material-icons mdc-toolbar__icon">contacts</a><a class="opcion" href="#noticias">Contacto</a></span>
         </section>
         <section class="mdc-toolbar__section mdc-toolbar__section--align-end opciones_der" role="toolbar">
-
-              <a href="acceso.html" class="material-icons mdc-toolbar__icon">vpn_key</a><span id="default-dialog-activation" class="opcion mdc-button mdc-button--primary mdc-button--raised mdc-ripple-upgraded" style="--mdc-ripple-surface-width:130.906px; --mdc-ripple-surface-height:36px; --mdc-ripple-fg-size:78.5438px; --mdc-ripple-fg-scale:1.85586;">Acceso</span>
+              <span href="acceso.html"><a class="opcion" href="acceso.html">Acceso</a><a href="acceso.html" class="material-icons mdc-toolbar__icon">vpn_key</a></span>
         </section>
       </div>
     </header>
     <main>
       <div class="mdc-toolbar-fixed-adjust">
-    <!-- dialog -->
-        <div class="demo-body">
-         <aside id="mdc-dialog-default" class="mdc-dialog" role="alertdialog" aria-hidden="true" aria-labelledby="mdc-dialog-default-label" aria-describedby="mdc-dialog-default-description">
-     	    <div class="mdc-dialog__surface">
-     	      <header class="mdc-dialog__header">
-     	        <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
-     	          Iniciar sesión
-     	        </h2>
-     	      </header>
-            <section class="heroo">
-              <div class="mdc-textfield mdc-textfield--upgraded">
-                <input type="text" class="mdc-textfield__input" id="usuario" name="email" aria-controls="my-textfield-helptext" data-demo-no-auto-js="" autocomplete="email">
-                <label for="my-textfield" class="mdc-textfield__label mdc-textfield__label--float-above">Usuario</label>
-              </div>
-            </section>
-            <section class="vali">
-              <h2>Password field with validation</h2>
-              <div class="mdc-textfield mdc-textfield--upgraded">
-                <input required="" pattern=".{8,}" type="password" class="mdc-textfield__input" id="contra" aria-controls="pw-validation-msg" autocomplete="current-password">
-                <label for="pw" class="mdc-textfield__label mdc-textfield__label--float-above">Choose password</label>
-              </div>
-              <p class="mdc-textfield-helptext mdc-textfield-helptext--persistent mdc-textfield-helptext--validation-msg" id="pw-validation-msg">
-                Must be at least 8 characters long
-              </p>
-            </section>
-            <footer class="mdc-dialog__footer">
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel mdc-ripple-upgraded" style="--mdc-ripple-surface-width:73.2125px; --mdc-ripple-surface-height:28.8px; --mdc-ripple-fg-size:43.9275px; --mdc-ripple-fg-scale:2.01863;">Decline</button>
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept mdc-ripple-upgraded" style="--mdc-ripple-surface-width:70.55px; --mdc-ripple-surface-height:28.8px; --mdc-ripple-fg-size:42.33px; --mdc-ripple-fg-scale:2.03643;">Accept</button>
-            </footer>
-     	    </div>
-     	    <div class="mdc-dialog__backdrop"></div>
-       	</aside>
-      </div>
-<!-- fin del dialog -->
-
-
         <p class="demo-paragraph">
           Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est.
         </p>
@@ -185,7 +106,6 @@
         </p>
       </div>
     </main>
-
     <footer>
       <span>Flexible Expansion Ratio: <span id="ratio">1.00</span></span>
     </footer>
@@ -215,52 +135,6 @@
             ratioSpan.innerHTML = flexibleExpansionRatio.toFixed(2);
           });
           toolbar.fixedAdjustElement = document.querySelector('.mdc-toolbar-fixed-adjust');
-        }
-      })();
-    </script>
-          <!-- dialog -->
-    <script src="./mdc/material-components-web.js.descarga" charset="utf-8"></script>
-    <script>
-      (function() {
-        var dialog = new mdc.dialog.MDCDialog(document.querySelector('#mdc-dialog-default'));
-        dialog.listen('MDCDialog:accept', function() {
-          var usu=$('#usuario').val();
-          var con=$('#contra').val();
-           $.ajax(
-             {
-               url:'programs/inicio.php',
-               type:'POST',
-               data:
-               {
-                 usuario:usu,
-                 contra:con,
-               },
-               success:function(dato)
-               {
-                console.log(dato);
-                console.log('hola');
-               }
-             });
-          });
-        dialog.listen('MDCDialog:cancel', function() {
-          console.log('canceled');
-        });
-        document.querySelector('#default-dialog-activation').addEventListener('click', function (evt) {
-          dialog.lastFocusedTarget = evt.target;
-          dialog.show();
-        });
-      })();
-
-    </script>
-
-    <script src="./mdc/material-components-web.js.descarga" charset="utf-8"></script>
-    <script>
-      (function() {
-        var tfs = document.querySelectorAll(
-          '.mdc-textfield:not([data-demo-no-auto-js])'
-        );
-        for (var i = 0, tf; tf = tfs[i]; i++) {
-          mdc.textfield.MDCTextfield.attachTo(tf);
         }
       })();
     </script>
